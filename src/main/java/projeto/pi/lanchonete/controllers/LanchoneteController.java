@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LanchoneteController {
 	
-	@RequestMapping("/lanchonete/form")
+	@RequestMapping("/produtos/form")
 	private String form() {
-		return "formLanchonete";
+		return "formProduto";
 		
 	}
 
