@@ -12,7 +12,7 @@ public class produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private double preço;
+	private String preço;
 	private String descrição;
 	
 
@@ -32,11 +32,11 @@ public class produto {
 		this.nome = nome;
 	}
 
-	public double getPreço() {
+	public String getPreço() {
 		return preço;
 	}
 
-	public void setPreço(double preço) {
+	public void setPreço(String preço) {
 		this.preço = preço;
 	}
 
@@ -46,6 +46,10 @@ public class produto {
 
 	public void setDescrição(String descrição) {
 		this.descrição = descrição;
+	}
+	@Override
+	public String toString() {
+		return "produto [id=" + id + ", nome=" + nome + ", preço=" + preço + ", descrição=" + descrição + "]";
 	}
 
 }
