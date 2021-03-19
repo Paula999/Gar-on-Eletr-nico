@@ -2,12 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
 <title>Lanchonete</title>
 </head>
 <body>
 
-<h1>Bem vindo a Lanchonete</h1>
+
+	<div th:replace="~{menu :: menu}"></div>
+
+	<div class="container">
+		<img src="/imagens/imagemLanchonete.jpg" />
+
+		<h1>Bem vindo a Lanchonete</h1>
 
 
+
+	</div>
 </body>
 </html>
