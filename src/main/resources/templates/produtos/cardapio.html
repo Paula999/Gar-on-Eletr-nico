@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<title>Lanchonete</title>
+</head>
+<body>
+
+
+	<div th:replace="~{menu :: menu}"></div>
+
+	<div class="container">
+
+
+		<h1>Cardápio</h1>
+
+		<table class="highlight">
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>nome</th>
+					<th>preço</th>
+					<th>descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="p : ${produtos}">
+					<td th:text="${p.id}">1</td>
+					<td th:text="${p.nome}">Pudim</td>
+					<td th:text="${p.preço}">3</td>
+					<td th:text="${p.descrição}">Leite, leite condensado e ovos</td>
+				</tr>
+
+
+			</tbody>
+
+
+
+
+
+		</table>
+
+	</div>
+</body>
+</html>
