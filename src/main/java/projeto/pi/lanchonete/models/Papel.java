@@ -7,8 +7,9 @@ import javax.persistence.Id;
 
 import org.springframework.security.core.GrantedAuthority;
 
+
 @Entity
-public class Papel implements GrantedAuthority{
+public class Papel implements GrantedAuthority {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
