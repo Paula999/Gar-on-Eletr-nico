@@ -7,6 +7,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import projeto.pi.lanchonete.service.CustomUserDetailsService;
 
+
 @Configuration
 public class SecurityConfig {
 	
